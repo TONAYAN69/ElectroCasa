@@ -20,4 +20,3 @@ tests/: Esta carpeta contiene todas las pruebas unitarias y de integración. Pue
 public/: Archivos estáticos como imágenes de productos, CSS, JS, etc., que necesitas servir públicamente.
 
 views/: Si tu backend necesita renderizar alguna vista (por ejemplo, usando EJS, Pug, etc.), estas plantillas se guardan aquí.
-
