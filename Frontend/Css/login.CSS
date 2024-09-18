@@ -1,0 +1,117 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative; /* Para asegurarse de que la tarjeta se centre correctamente */
+    --s: 200px;
+    --c1: #f2f2f2;
+    --c2: #cdcbcc;
+    --c3: #999999;
+  
+    
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 2em;
+    background-color: #171717;
+    border-radius: 35px;
+  }
+  
+  
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    border-radius: 35px;
+    transition: box-shadow 0.4s;
+    padding: 0.1em; /* Ajusta el padding según sea necesario */
+    max-width: 260px; /* Ancho máximo ajustado */
+  }
+  
+  .card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
+  }
+  
+  .card-content {
+    transition: all 0.2s;
+  }
+  
+  .card-content:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+  }
+  
+  #heading {
+    text-align: center;
+    margin: 2em 0;
+    color: #fff;
+    font-size: 1.2em;
+  }
+  
+  .field {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.6em;
+    border-radius: 25px;
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px #050505;
+    color: #fff;
+  }
+  
+  .input-icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: #fff;
+  }
+  
+  .input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #d3d3d3;
+  }
+  
+  .btn {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    margin-top: 2.5em;
+  }
+  
+  .button1,
+  .button2
+   {
+    padding: 0.5em;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    transition: background-color 0.4s, color 0.4s;
+    background-color: #252525;
+  }
+  .button3{
+    margin: 15%;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    transition: background-color 0.4s, color 0.4s;
+    background-color: #252525;
+
+  }
+  
+  .button1:hover,
+  .button2:hover {
+    background-color: rgb(55, 211, 231);
+  }
+  
+  .button3:hover {
+    background-color: red;
+  }
