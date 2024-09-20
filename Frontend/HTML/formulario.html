@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inicio de Sesión</title>
+  <link rel="stylesheet" href="../Css/formulario.css">
+  
+</head>
+<body>
+  <div class="card">
+    <div class="card2">
+      <form class="form" action="../P_php/conexion.php" method="post">
+        <img src="../IMG/logo.jpg" class="logo">
+        <h2 class="head2">ELECTRO HOUSE</h2>
+        <p id="heading">Hola! para continuar debes iniciar sesión</p>
+        <div class="field">
+            <img src="../ASSETS/user.svg">
+          <input type="text" class="input-field" name="usuario" placeholder="Usuario" autocomplete="off" required />
+        </div>
+        <div class="field">
+            <img src="../ASSETS/lock.svg">
+          <input type="password" class="input-field" name="clave" placeholder="Contraseña" required />
+        </div>
+        <div class="field">
+            <img src="../ASSETS/db.svg">
+          <input type="text" class="input-field" name="basedatos" placeholder="Base de Datos" required />
+        </div>
+        <div class="btn">
+          <button type="submit" class="button1">Ingresar</button>
+          <button type="button" class="button2">Sign Up</button>
+        </div>
+        <button type="button" class="button3">Forgot Password</button>
+      </form>
+    
+</div>
+<script>
+    // Agrega la clase "animated-button" a los botones para la animación
+    const buttons = document.querySelectorAll('.button1, .button2, .button3');
+    buttons.forEach(button => {
+        button.classList.add('animated-button');
+    });
+</script>
+    </div>
+  </div>
+</body>
+</html>
