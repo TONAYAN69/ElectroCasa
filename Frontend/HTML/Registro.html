@@ -10,21 +10,65 @@
     <div class="card-content">
       <form id="registerForm" class="form">
         <p id="heading">Registro - Electro Casa</p>
+
         <div class="field">
           <input type="text" id="nombre" class="input-field" placeholder="Nombre" autocomplete="off" required/>
         </div>
         <div class="field">
-          <input type="text" id="apellido" class="input-field" placeholder="Apellido" autocomplete="off" required/>
+          <input type="text" id="apellidoPaterno" class="input-field" placeholder="Apellido Paterno" autocomplete="off" required/>
         </div>
         <div class="field">
-          <input type="email" id="email" class="input-field" placeholder="Correo" autocomplete="off" required/>
+          <input type="text" id="apellidoMaterno" class="input-field" placeholder="Apellido Materno" autocomplete="off" required/>
+        </div>
+        <div class="field">
+          <input type="date" id="fechaNacimiento" class="input-field" required/>
+        </div>
+        <div class="field">
+          <select id="sexo" class="input-field" required>
+            <option value="">Seleccione Sexo</option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+        <div class="field">
+          <input type="text" id="curp" class="input-field" placeholder="CURP" autocomplete="off" required/>
+        </div>
+        <div class="field">
+          <input type="text" id="rfc" class="input-field" placeholder="RFC" autocomplete="off" required/>
+        </div>
+        <div class="field">
+          <input type="email" id="email" class="input-field" placeholder="Correo Electrónico" autocomplete="off" required/>
         </div>
         <div class="field">
           <input type="password" id="password" class="input-field" placeholder="Contraseña" required/>
         </div>
-        <div class="field">
-          <input type="tel" id="telefono" class="input-field" placeholder="Número de Teléfono" required/>
-        </div>
+        
+        <fieldset>
+          <legend>Dirección</legend>
+          <div class="field">
+            <input type="text" id="calle" class="input-field" placeholder="Calle" required/>
+          </div>
+          <div class="field">
+            <input type="text" id="numeroExterior" class="input-field" placeholder="Número Exterior" required/>
+          </div>
+          <div class="field">
+            <input type="text" id="numeroInterior" class="input-field" placeholder="Número Interior"/>
+          </div>
+          <div class="field">
+            <input type="text" id="colonia" class="input-field" placeholder="Colonia" required/>
+          </div>
+          <div class="field">
+            <input type="text" id="ciudad" class="input-field" placeholder="Ciudad" required/>
+          </div>
+          <div class="field">
+            <input type="text" id="estado" class="input-field" placeholder="Estado" required/>
+          </div>
+          <div class="field">
+            <input type="text" id="codigoPostal" class="input-field" placeholder="Código Postal" required/>
+          </div>
+        </fieldset>
+
         <div class="btn">
           <button type="submit" class="button1">Registrar</button>
         </div>
